@@ -29,7 +29,7 @@ export default {
       },
       boards: [],
       errors: [],
-      ref: firebase.firestore().collection('boards'),
+      ref: firebase.collection('boards'),
     }
   },
   created () {

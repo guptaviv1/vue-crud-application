@@ -36,7 +36,7 @@ export default {
     }
   },
   created () {
-    const ref = firebase.firestore().collection('boards').doc(this.$route.params.id);
+    const ref = firebase.collection('boards').doc(this.$route.params.id);
     ref.get().then((doc) => {
       if (doc.exists) {
         this.key = doc.id;
@@ -54,7 +54,7 @@ export default {
       })
     },
     deleteboard (id) {
-      firebase.firestore().collection('boards').doc(id).delete().then(() => {
+      firebase.collection('boards').doc(id).delete().then(() => {
         router.push({
           name: 'BoardList'
         })

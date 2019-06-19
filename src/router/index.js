@@ -1,9 +1,10 @@
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 import BoardList from '@/components/BoardList'
 import ShowBoard from '@/components/ShowBoard'
 import AddBoard from '@/components/AddBoard'
 import EditBoard from '@/components/EditBoard'
-
+Vue.use(VueRouter);
 export default new VueRouter({
     routes: [
       {
