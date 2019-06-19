@@ -24,6 +24,8 @@ npm run test
 ```
 npm run lint
 ```
+### test this app on
+[https://api-project-850016456775.firebaseapp.com](https://api-project-850016456775.firebaseapp.com)
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
